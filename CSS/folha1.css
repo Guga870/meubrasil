@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f4f7;
+}
+
+header{
+    background-image: url("brasil.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+header h1{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+header input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+}
+
+.estatisticas{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    padding:15px;
+}
+
+.card-info{
+    background:white;
+    border-radius:15px;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
+}
+
+.card-info h2{
+    color:#009933;
+}
+
+.filtros{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    padding:15px;
+}
+
+.filtros button{
+    border:none;
+    border-radius:30px;
+    padding:10px 20px;
+    background:white;
+    cursor:pointer;
+    white-space:nowrap;
+}
+
+.filtros .ativo{
+    background:#009933;
+    color:white;
+}
+
+.titulo-regiao{
+    padding:15px;
+    color:#007733;
+}
+
+.lista-estados{
+    padding:0 15px 20px;
+}
+
+.estado{
+    background:white;
+    border-radius:15px;
+    padding:15px;
+    display:flex;
+    align-items:center;
+    margin-bottom:12px;
+    box-shadow:0 2px 5px rgba(0,0,0,.08);
+}
+
+.sigla{
+    width:50px;
+    height:50px;
+    border-radius:10px;
+    background:#f0f0f0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    color:#888;
+}
+
+.dados{
+    flex:1;
+    margin-left:15px;
+}
+
+.dados h2{
+    font-size:20px;
+    margin-bottom:5px;
+}
+
+.dados p{
+    color:#666;
+}
+
+.estado span{
+    font-size:30px;
+    color:#999;
+}

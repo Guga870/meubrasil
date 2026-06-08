@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Brasil</title>
+    <link rel="stylesheet" href="CSS/folha1.css">
+</head>
+<body>
+
+    <header>
+        <h1>Meu Brasil</h1>
+        <input type="text" placeholder="Buscar Estado ou Capital do Brasil...">
+    </header>
+    
+    <section class="estatisticas">
+        <div class="card-info">
+            <h2>27</h2>
+            <p>Unidades</p>
+        </div>
+        <div class="card-info">
+            <h2>5</h2>
+            <p>Regiões</p>
+        </div>
+        <div class="card-info">
+            <h2>26</h2>
+            <p>Estados</p>
+        </div>
+        <div class="card-info">
+            <h2>1</h2>
+            <p>DF</p>
+        </div>
+    </section>
+
+    <section class="filtros">
+        <button onclick="mostrarRegiao('todos')">Todos</button>
+        <button onclick="mostrarRegiao('norte')">Norte</button>
+        <button onclick="mostrarRegiao('nordeste')">Nordeste</button>
+        <button onclick="mostrarRegiao('centro-oeste')">Centro-Oeste</button>
+        <button onclick="mostrarRegiao('sudeste')">Sudeste</button>
+        <button onclick="mostrarRegiao('sul')">Sul</button>
+    </section>
+
+    <section class="lista-estados">
+
+        <h3 class="titulo-regiao" data-regiao="norte">● NORTE</h3>
+
+        <div class="estado" data-regiao="norte">
+            <div class="sigla">AC</div>
+            <div class="dados">
+                <h2><a href="Acre.html">Acre</a></h2>
+                <p>🏛 Rio Branco • 📍 Norte</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="norte">
+            <div class="sigla">AP</div>
+            <div class="dados">
+                <h2>Amapá</h2>
+                <p>🏛 Macapá • 📍 Norte</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="norte">
+            <div class="sigla">AM</div>
+            <div class="dados">
+                <h2>Amazonas</h2>
+                <p>🏛 Manaus • 📍 Norte</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="norte">
+            <div class="sigla">PA</div>
+            <div class="dados">
+                <h2>Pará</h2>
+                <p>🏛 Belém • 📍 Norte</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="norte">
+            <div class="sigla">RO</div>
+            <div class="dados">
+                <h2>Rondônia</h2>
+                <p>🏛 Porto Velho • 📍 Norte</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="norte">
+            <div class="sigla">RR</div>
+            <div class="dados">
+                <h2>Roraima</h2>
+                <p>🏛 Boa Vista • 📍 Norte</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="norte">
+            <div class="sigla">TO</div>
+            <div class="dados">
+                <h2>Tocantins</h2>
+                <p>🏛 Palmas • 📍 Norte</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <h3 class="titulo-regiao" data-regiao="nordeste">● NORDESTE</h3>
+
+        <div class="estado" data-regiao="nordeste">
+            <div class="sigla">AL</div>
+            <div class="dados">
+                <h2>Alagoas</h2>
+                <p>🏛 Maceió • 📍 Nordeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="nordeste">
+            <div class="sigla">BA</div>
+            <div class="dados">
+                <h2>Bahia</h2>
+                <p>🏛 Salvador • 📍 Nordeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="nordeste">
+            <div class="sigla">CE</div>
+            <div class="dados">
+                <h2>Ceará</h2>
+                <p>🏛 Fortaleza • 📍 Nordeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="nordeste">
+            <div class="sigla">MA</div>
+            <div class="dados">
+                <h2>Maranhão</h2>
+                <p>🏛 São Luís • 📍 Nordeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="nordeste">
+            <div class="sigla">PB</div>
+            <div class="dados">
+                <h2>Paraíba</h2>
+                <p>🏛 João Pessoa • 📍 Nordeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="nordeste">
+            <div class="sigla">PE</div>
+            <div class="dados">
+                <h2>Pernambuco</h2>
+                <p>🏛 Recife • 📍 Nordeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="nordeste">
+            <div class="sigla">PI</div>
+            <div class="dados">
+                <h2>Piauí</h2>
+                <p>🏛 Teresina • 📍 Nordeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="nordeste">
+            <div class="sigla">RN</div>
+            <div class="dados">
+                <h2>Rio Grande do Norte</h2>
+                <p>🏛 Natal • 📍 Nordeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="nordeste">
+            <div class="sigla">SE</div>
+            <div class="dados">
+                <h2>Sergipe</h2>
+                <p>🏛 Aracaju • 📍 Nordeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <h3 class="titulo-regiao" data-regiao="centro-oeste">● CENTRO-OESTE</h3>
+
+        <div class="estado" data-regiao="centro-oeste">
+            <div class="sigla">DF</div>
+            <div class="dados">
+                <h2>Distrito Federal</h2>
+                <p>🏛 Brasília • 📍 Centro-Oeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="centro-oeste">
+            <div class="sigla">GO</div>
+            <div class="dados">
+                <h2>Goiás</h2>
+                <p>🏛 Goiânia • 📍 Centro-Oeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="centro-oeste">
+            <div class="sigla">MT</div>
+            <div class="dados">
+                <h2>Mato Grosso</h2>
+                <p>🏛 Cuiabá • 📍 Centro-Oeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="centro-oeste">
+            <div class="sigla">MS</div>
+            <div class="dados">
+                <h2>Mato Grosso do Sul</h2>
+                <p>🏛 Campo Grande • 📍 Centro-Oeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <h3 class="titulo-regiao" data-regiao="sudeste">● SUDESTE</h3>
+
+        <div class="estado" data-regiao="sudeste">
+            <div class="sigla">ES</div>
+            <div class="dados">
+                <h2>Espírito Santo</h2>
+                <p>🏛 Vitória • 📍 Sudeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="sudeste">
+            <div class="sigla">MG</div>
+            <div class="dados">
+                <h2>Minas Gerais</h2>
+                <p>🏛 Belo Horizonte • 📍 Sudeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="sudeste">
+            <div class="sigla">RJ</div>
+            <div class="dados">
+                <h2>Rio de Janeiro</h2>
+                <p>🏛 Rio de Janeiro • 📍 Sudeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="sudeste">
+            <div class="sigla">SP</div>
+            <div class="dados">
+                <h2>São Paulo</h2>
+                <p>🏛 São Paulo • 📍 Sudeste</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <h3 class="titulo-regiao" data-regiao="sul">● SUL</h3>
+
+        <div class="estado" data-regiao="sul">
+            <div class="sigla">PR</div>
+            <div class="dados">
+                <h2>Paraná</h2>
+                <p>🏛 Curitiba • 📍 Sul</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="sul">
+            <div class="sigla">RS</div>
+            <div class="dados">
+                <h2>Rio Grande do Sul</h2>
+                <p>🏛 Porto Alegre • 📍 Sul</p>
+            </div>
+            <span>›</span>
+        </div>
+
+        <div class="estado" data-regiao="sul">
+            <div class="sigla">SC</div>
+            <div class="dados">
+                <h2>Santa Catarina</h2>
+                <p>🏛 Florianópolis • 📍 Sul</p>
+            </div>
+            <span>›</span>
+        </div>
+
+    </section>
+
+    <script>
+        // 1. FUNÇÃO DOS BOTÕES DE FILTRO POR REGIÃO
+        function mostrarRegiao(regiaoSelecionada) {
+            const elementos = document.querySelectorAll('[data-regiao]');
+
+            elementos.forEach(elemento => {
+                const regiaoDoElemento = elemento.getAttribute('data-regiao');
+
+                if (regiaoSelecionada === 'todos' || regiaoDoElemento === regiaoSelecionada) {
+                    elemento.style.display = ""; // Mostra o elemento
+                } else {
+                    elemento.style.display = "none"; // Esconde o elemento
+                }
+            });
+        }
+
+        // 2. FUNÇÃO EXTRA: BARRA DE PESQUISA (BUSCA EM TEMPO REAL)
+        const inputBusca = document.querySelector('header input');
+
+        inputBusca.addEventListener('input', function() {
+            const termoBusca = this.value.toLowerCase().trim();
+            const cardsEstados = document.querySelectorAll('.estado');
+            const titulosRegiao = document.querySelectorAll('.titulo-regiao');
+
+            // Se o input estiver vazio, limpa a busca e mostra tudo
+            if (termoBusca === "") {
+                cardsEstados.forEach(card => card.style.display = "");
+                titulosRegiao.forEach(titulo => titulo.style.display = "");
+                return;
+            }
+
+            // Oculta os títulos das regiões durante a busca para o resultado ficar limpo
+            titulosRegiao.forEach(titulo => titulo.style.display = "none");
+
+            cardsEstados.forEach(card => {
+                const nomeEstado = card.querySelector('.dados h2').textContent.toLowerCase();
+                const dadosTexto = card.querySelector('.dados p').textContent.toLowerCase();
+                const sigla = card.querySelector('.sigla').textContent.toLowerCase();
+
+                // Verifica se bate com Estado, Capital ou Sigla
+                if (nomeEstado.includes(termoBusca) || dadosTexto.includes(termoBusca) || sigla.includes(termoBusca)) {
+                    card.style.display = ""; 
+                } else {
+                    card.style.display = "none"; 
+                }
+            });
+        });
+    </script>
+</body>
+</html>
